@@ -1,0 +1,38 @@
+{
+    "name": "frhytgde",
+    "description": "v2ray websocket proxy on heroku",
+    "keywords": ["v2ray vmess vless trojan shadowsocks socks tor"],
+    "env": {
+        "AA": {
+            "description": "初阶用户只需修改以下AUUID点击页面最后的Deploy app按钮即可开始部�?,
+            "value": "如出现错误，请检查参数格式或多尝试几次。使用自定义参数请务必先充分理解其含�?
+        },
+        "AUUID": {
+            "description": "UUID充当各个配置的路径和账号密码，建议修改和妥善保存,可生成UUID的网�? https://www.uuidgenerator.net",
+            "value": "8f91b6a0-e8ee-11ea-adc1-0242ac120002"
+        },
+        "CADDYIndexPage": {
+            "description": "自定义CADDY部署完成后点击View的显示页面，参考：https://github.com/mkiusew/frhytgde/blob/master/etc/CADDYIndexPage.md",
+            "value": "https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html"
+        },
+        "CONFIGCADDY": {
+            "description": "自定义网络地址读取配置运行CADDY，不熟悉CADDY配置的请勿修�?,
+            "value": "https://raw.githubusercontent.com/mkiusew/frhytgde/master/etc/Caddyfile"
+        },
+        "CONFIGV2RAY": {
+            "description": "自定义网络地址读取配置运行V2RAY，不熟悉V2RAY配置的请勿修�?,
+            "value": "https://raw.githubusercontent.com/mkiusew/frhytgde/master/etc/v2ray.json"
+        },
+        "ParameterSSENCYPT": {
+            "description": "SS加密方式，查看支持协�? https://www.v2fly.org/config/protocols/shadowsocks.html",
+            "value": "chacha20-ietf-poly1305"
+        },
+        "StoreFiles": {
+            "description": "自定义网络地址读取存储文件列表",
+            "value": "https://raw.githubusercontent.com/mkiusew/frhytgde/master/etc/StoreFiles"
+        }
+    },
+    "website": "https://github.com/mkiusew/frhytgde",
+    "repository": "https://github.com/mkiusew/frhytgde",
+    "stack": "container"
+}
